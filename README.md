@@ -4,7 +4,7 @@
 
 
 # Virgil Game Search
-Virgil Is an actively maintained fork of [Rave](https://ravegamesearch.pages.dev/) (Due to Rave originally Using Unsafe Sources).
+Virgil Is an actively maintained fork of [Rave](https://ravegamesearch.pages.dev/) (Due to Rave originally Using Some Unsafe, Dead and Unknown Sources).
 Virgil's main purpose is simple: Use Safe Sources. We only use sources listed on [FMHY](https://fmhy.net) And the list is always up to par with FMHY.
 
 # Features
