@@ -478,3 +478,39 @@ body.underline a{text-decoration: underline}
 h3 {
     color:#ffffff
 }
+
+#results {
+    margin-top: 20px;
+}
+
+.result-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.result-item h3 a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.result-item p {
+    color: #555;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+
+
+
+.gsc-wrapper {
+        font-family: 'Roboto';
+    src: url('fonts/IBMPlexMono-Regular.ttf') format('woff2'),
+         url('fonts/IBMPlexMono-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
