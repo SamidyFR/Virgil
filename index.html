@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Virgil Game Search</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="img/favicon.png" rel="shortcut icon">
+
+    <meta name="title" content="Virgil Game Search"/>
+    <meta name="description" content="Actively Maintained Fork of Rave, Find Safe download links for your favorite games."/>
+    <meta name="theme-color" content="#F63F4D">
+
+ 
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Desktop Engine Switcher -->
+        <div class="engine-swticher">
+        </div>
+
+        <!-- Notification Centre javascript, controls cross-refresh hiding of items -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Retrieve hidden items from localStorage
+                let hiddenItems = JSON.parse(localStorage.getItem("hiddenItems")) || [];
+    
+                // Get all items
+                const items = document.querySelectorAll(".notification-zone .item");
+    
+                // Loop through items and add 'hidden' class if in hiddenItems array
+                items.forEach(item => {
+                    if (hiddenItems.includes(item.textContent.trim())) {
+                        item.classList.add("hidden");
+                    }
+                });
+    
+                // Add click event listener to close buttons
+                const closeButtons = document.querySelectorAll(".notification-zone .close-btn");
+                closeButtons.forEach(button => {
+                    button.addEventListener("click", function() {
+                        const item = this.parentNode;
+                        item.classList.add("hidden");
+    
+                        // Add item text to hiddenItems array
+                        const itemName = item.textContent.trim();
+                        if (!hiddenItems.includes(itemName)) {
+                            hiddenItems.push(itemName);
+                        }
+    
+                        // Save updated hiddenItems array to localStorage
+                        localStorage.setItem("hiddenItems", JSON.stringify(hiddenItems));
+                    });
+                });
+            });
+        </script>
+        
+        <!-- Search Box, logo banner and advertisement-->
+        <div class="maindiv">
+            <div class="searchlogo">
+                <img id="searchlogo" class="searchlogo" src="img/search-logo.png" onclick="location.href='index.html';">
+                <!-- Script to cycle between banner images with a fade effect in between -->
+                <script>
+                    var images = ['img/search-logo.png', 'img/search-logo-2.png'];
+                    var index = 0;
+                    var logo = document.getElementById("searchlogo");
+                    </script>
+            </div>
+            <!-- Search engine code, partially provided by Google -->
+            <script>
+                (function() {
+                var cx = "904ead0bae8c845f0";
+                var gcse = document.createElement("script");
+                gcse.type = "text/javascript";
+                gcse.async = true;
+                gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(gcse, s);
+                })();
+                window.onload = function()
+                { 
+                var searchBox =  document.getElementById("gsc-i-id1");
+                searchBox.placeholder="What Game Are you Seeking?";
+                searchBox.title="Virgil Game Search"; 
+                }
+            </script>
+            <gcse:search class="searchbox"></gcse:search>
+            <div class="search-note2">
+                <span class="Adblock">
+    WARNING: Use an Adblocker Before visiting ANY Of these sites! We recommend <a href="https://github.com/gorhill/uBlock">Ublock Origin</a> (If you're on Google Chrome we Recommend Using Firefox For Pirating.)
+</div>
+</span>
+<div class="search-note">
+    If the search result is a website homepage, it Means the site does have the game, but the site is unscrapeable. Manually Search for the game on the site.
+</div>
+        </div>
+    </div>
+
+    <!-- Bottom Left Corner Box, formerly Games Found Counter -->
+    <div class="corner-box">
+        <img src="">
+    </div>
+
+    <!-- Terms of Use, Privacy Policy and GitHub Link -->
+    <div class="terms">
+        <a href="https://github.com/SamidyFR">GitHub</a>
+        <a href="/Copyright-Notice.html">Copyright/DMCA</a>
+    </div>
+
+
+</body>
+</html>
