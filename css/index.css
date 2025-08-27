@@ -529,3 +529,7 @@ h3 {
 .gsc-refinementBlock {
     --border-color: #FFF;
 }
+
+.gsc-cursor-numbered-page {
+    color: var(--text-color) !important;
+}
