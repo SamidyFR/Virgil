@@ -533,3 +533,7 @@ h3 {
 .gsc-cursor-numbered-page {
     color: var(--text-color) !important;
 }
+
+.gsc-results .gsc-cursor {
+    color: var(--text-color) !important;
+}
