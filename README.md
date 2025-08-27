@@ -8,7 +8,6 @@ Virgil Is an actively maintained fork of [Rave](https://ravegamesearch.pages.dev
 Virgil's main purpose is simple: Use Safe Sources. We only use sources listed on [FMHY](https://fmhy.net) And the list is always up to par with FMHY.
 
 # Features
-- Extremely Fast search, uses multiple sources
 - Only indexes links Tested by FMHY
 - Uses Google search indexing to provide results quickly
 - Minimalist UI
