@@ -6,6 +6,7 @@
     font-style: normal;
 }
 
+
 :root {
     --bg-color: #000000;
     --text-color: #ffffff;
@@ -20,10 +21,13 @@ body {
     background-color: var(--bg-color);
     height: 100%;
     font-family: Roboto;
+    padding-top: -20px;
+    padding-bottom: 40px;
 }
 
 .container {
     height: 100%;
+    margin-top: -20px;
 }
 
 /* Search Bar and Logo Container */
@@ -31,8 +35,9 @@ body {
         margin: auto;
         position: relative;
         text-align: left;
-        top: 25%;
-        width: 40%;
+        top: 0%;
+        width: 50%;
+        margin-top: 40px;
     }
     
     .maindiv img {
@@ -358,7 +363,7 @@ body {
             margin: auto;
             position: relative;
             text-align: left;
-            top: 30%;
+            top: 5%;
             width: 90%;
         }
 
@@ -405,6 +410,7 @@ body {
     color: #f0f0f0;
     font-size: 18px;
     text-align: center;
+    
 }
 
 a {
@@ -530,10 +536,3 @@ h3 {
     --border-color: #FFF;
 }
 
-.gsc-cursor-numbered-page {
-    color: var(--text-color) !important;
-}
-
-.gsc-results .gsc-cursor {
-    color: var(--text-color) !important;
-}
