@@ -514,3 +514,18 @@ h3 {
     font-weight: normal;
     font-style: normal;
 }
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    border-color: var(--text-color) !important;
+  color: var(--text-color) !important;
+  border-bottom: 2px solid var(--text-color) !important;
+  padding: 5px 10px !important;
+  fill: var(--text-color) !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+}
+
+
+.gsc-refinementBlock {
+    --border-color: #FFF;
+}
