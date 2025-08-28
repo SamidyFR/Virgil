@@ -48,6 +48,6 @@ Take any legal issues up with them. ♥
 Use an Adblocker Before visiting ANY Of the sites Indexed! Follow FMHY's [Beginners Guide.](https://fmhy.net/beginners-guide)
 
 #### Do note the project is still a HEAVY work in progress. the project Could get a whole rewrite soon.
-
+Current Version: Alpha
 
 ### Happy Gaming!
