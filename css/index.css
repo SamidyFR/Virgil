@@ -413,7 +413,7 @@ body {
     
 }
 
-a {
+.a_animation {
   background-color: transparent;
   text-decoration: none;
   line-height: 16pt;
@@ -423,16 +423,16 @@ a {
   color: white;
 }
 
-a:visited {
+.a_animation:visited {
   color: silver;
 }
 
-a:hover {
+.a_animation:hover {
   font-size: 16pt;
   background-clip: text;
 }
 
-a{text-decoration: none}
+.a_animation{text-decoration: none}
 body.underline a{text-decoration: underline}
 
 gsc-webResult gsc-result {
