@@ -5,7 +5,7 @@
 
 <h1 align="center"> Virgil Game Search </h1>
 
-Virgil Is an actively maintained fork of [Rave](https://ravegamesearch.pages.dev/) (Due to Rave originally Using Some Unsafe, Dead and Unknown Sources).
+Virgil Is an actively maintained game search platform. (Based On [Rave](https://ravegamesearch.pages.dev/#gsc.tab=0))
 Virgil's main purpose is simple: Use Safe Sources. We only use sources listed on [FMHY](https://fmhy.net) And the list is always up to par with FMHY.
 
 <p align="center">
@@ -30,7 +30,7 @@ https://github.com/user-attachments/assets/95e875c7-e074-44e4-81f8-ea51cc615019
 3. Fill in the required information:
   - Name: Anything you want, But we prefer "Virgil Game Search"
   - Nickname: Anything you want, But we prefer "Virgil"
-  - URL: https://virgilsearchpreview.samidy.com/index.html?q=%s (please note that the '%s' keyword substitute may be different across browsers, kindly follow the instructions provided on your browser to replace if needed.) 
+  - URL: https://virgil.samidy.com/index.html?q=%s (please note that the '%s' keyword substitute may be different across browsers, kindly follow the instructions provided on your browser to replace if needed.) 
 
 
 ## Indexed Websites
