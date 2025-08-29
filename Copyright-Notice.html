@@ -18,55 +18,11 @@
 <body>
     <div class="container">
         
-        <!-- Desktop Engine Switcher -->
-        <div class="engine-swticher">
-        </div>
-        <!-- Notification Centre javascript, controls cross-refresh hiding of items -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                // Retrieve hidden items from localStorage
-                let hiddenItems = JSON.parse(localStorage.getItem("hiddenItems")) || [];
-    
-                // Get all items
-                const items = document.querySelectorAll(".notification-zone .item");
-    
-                // Loop through items and add 'hidden' class if in hiddenItems array
-                items.forEach(item => {
-                    if (hiddenItems.includes(item.textContent.trim())) {
-                        item.classList.add("hidden");
-                    }
-                });
-    
-                // Add click event listener to close buttons
-                const closeButtons = document.querySelectorAll(".notification-zone .close-btn");
-                closeButtons.forEach(button => {
-                    button.addEventListener("click", function() {
-                        const item = this.parentNode;
-                        item.classList.add("hidden");
-    
-                        // Add item text to hiddenItems array
-                        const itemName = item.textContent.trim();
-                        if (!hiddenItems.includes(itemName)) {
-                            hiddenItems.push(itemName);
-                        }
-    
-                        // Save updated hiddenItems array to localStorage
-                        localStorage.setItem("hiddenItems", JSON.stringify(hiddenItems));
-                    });
-                });
-            });
-        </script>
-        
         <!-- Search Box, logo banner and advertisement-->
         <div class="maindiv">
             <div class="searchlogo">
                 <img id="searchlogo" class="searchlogo" src="img/search-logo.png" onclick="location.href='index.html';">
-                <!-- Script to cycle between banner images with a fade effect in between -->
-                <script>
-                    var images = ['img/search-logo.png', 'img/search-logo-2.png'];
-                    var index = 0;
-                    var logo = document.getElementById("searchlogo");
-                    </script>
+                <h2>Virgil Game Search.</h2>
             </div>
 
 <h3>Copyright/DMCA</h3>

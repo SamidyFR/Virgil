@@ -536,3 +536,46 @@ h3 {
     --border-color: #FFF;
 }
 
+h2 {
+    color:#FFF
+}
+
+h5 {
+    color:#FFF
+}
+
+footer {
+    padding: 160px 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.star {
+    background-color: transparent;
+    color: #FFD700;
+}
+
+
+.a_underline {
+  background-color: transparent;
+  text-decoration: underline;
+  line-height: 16pt;
+  font-size: 14pt;
+  transition: 0.2s;
+  background-image: none;
+  color: white;
+}
+
+.a_underline:visited {
+  color: silver;
+  text-decoration: underline;
+}
+
+.a_underline:hover {
+  font-size: 16pt;
+  background-clip: text;
+  text-decoration: underline;
+}
+
+.a_underline{text-decoration: none}
+body.underline a{text-decoration: underline}
