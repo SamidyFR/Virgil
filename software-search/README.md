@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://files.catbox.moe/o6ies4.png" alt="Centered Image" width="400"/>
+  <img src="https://i.ibb.co/dJV22vYr/no-bg-image-5.png" alt="Centered Image" width="400"/>
 </p>
 
 
@@ -9,11 +9,9 @@ Virgil Is an actively maintained software search platform.
 Virgil's main purpose is simple: Use Safe Sources. We only use sources listed on [FMHY](https://fmhy.net) And the list is always up to par with FMHY.
 
 <p align="center">
-  <img src="https://files.catbox.moe/pfwyaf.png" alt="Centered Image"/>
+  <img src="https://i.ibb.co/nM5GxfgX/Screenshot-2025-08-31-164141.png" alt="Centered Image"/>
 </p>
 
-
-https://github.com/user-attachments/assets/95e875c7-e074-44e4-81f8-ea51cc615019
 
 
 
