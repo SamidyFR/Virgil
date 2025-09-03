@@ -5,7 +5,7 @@
 
 <h1 align="center"> Virgil Search Engine. </h1>
 
-Virgil Is an actively maintained game search platform. (Based On [Rave](https://ravegamesearch.pages.dev/#gsc.tab=0))
+Virgil Is an actively maintained search platform.
 Virgil's main purpose is simple: Use Safe Sources. We only use sources listed on [FMHY](https://fmhy.net) And the list is always up to par with FMHY.
 
 <p align="center">
@@ -15,6 +15,7 @@ Virgil's main purpose is simple: Use Safe Sources. We only use sources listed on
 
 https://github.com/user-attachments/assets/95e875c7-e074-44e4-81f8-ea51cc615019
 
+<h6>Video of Virgil Game Search</h6>
 
 
 
@@ -53,4 +54,4 @@ Use an Adblocker Before visiting ANY Of the sites Indexed! Follow FMHY's [Beginn
 #### Do note the project is still a HEAVY work in progress. the project Could get a whole rewrite soon.
 Current Version: Alpha
 
-### Happy Gaming!
+### Happy... uh.. Pirating!
