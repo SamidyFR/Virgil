@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Game-search/css/fonts/IBMPlexMono-Regular.ttf') format('woff2'),
+         url('Game-search/css/fonts/IBMPlexMono-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Roboto;
+    background: #000;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+
+button {
+    background-color: #fff;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: Roboto;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, #FFF, #000);
+}
