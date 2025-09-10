@@ -55,16 +55,6 @@ button:hover {
 }
 
 
-.border:hover{
-  background-image: linear-gradient(to right, #0000D3, #47A3ff) !important;
-  color: transparent !important;
-  background-clip: text !important;
-}
-
-.border{text-decoration: none}
-body.underline a{text-decoration: underline}
-
-
 .a-button{
     color: #000;
 }
