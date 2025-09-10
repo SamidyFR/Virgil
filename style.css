@@ -15,8 +15,18 @@ body {
     padding-top: 200px;
     padding-bottom: 40px;
     text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    
 }
 
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #FFF;
+}
 
 button {
     background-color: #fff;
@@ -34,4 +44,27 @@ button {
 
 button:hover {
   background-image: linear-gradient(to right, #FFF, #000);
+}
+
+
+.border{
+    display: inline-block;
+    border: 5px solid #FFF;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+
+.border:hover{
+  background-image: linear-gradient(to right, #0000D3, #47A3ff) !important;
+  color: transparent !important;
+  background-clip: text !important;
+}
+
+.border{text-decoration: none}
+body.underline a{text-decoration: underline}
+
+
+.a-button{
+    color: #000;
 }
