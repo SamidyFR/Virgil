@@ -32,8 +32,8 @@ https://github.com/user-attachments/assets/95e875c7-e074-44e4-81f8-ea51cc615019
   - Name: Anything you want, But we prefer "Virgil Game Search" for game search, and "Virgil Software Search" for software search
   - Nickname: Anything you want, But we prefer "Virgil"
   - URL:
-  * For Game Search: https://virgil.samidy.com/index.html?q=%s
-  * For Software Search: https://virgil.samidy.com/index.html?q=%s
+  * For Game Search: https://virgil.samidy.com/Game-search/?q=%s
+  * For Software Search: https://virgil.samidy.com/software-search/?q=%s
   * please note that the '%s' keyword substitute may be different across browsers, kindly follow the instructions provided on your browser to replace if needed.
 
 
