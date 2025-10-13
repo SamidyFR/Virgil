@@ -1,0 +1,585 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/IBMPlexMono-Regular.ttf') format('woff2'),
+         url('fonts/IBMPlexMono-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --primary-color: #000000;
+    --secondary-color: #DBDBDB;
+    --border-color: #121212;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    height: 100%;
+    font-family: Roboto;
+    padding-top: -20px;
+    padding-bottom: 40px;
+}
+
+.container {
+    height: 100%;
+    margin-top: -20px;
+}
+
+/* Search Bar and Logo Container */
+    .maindiv {
+        margin: auto;
+        position: relative;
+        text-align: left;
+        top: 0%;
+        width: 50%;
+        margin-top: 40px;
+    }
+    
+    .maindiv img {
+        max-width: 70%;
+    }
+    
+    .searchlogo {
+        text-align: center;
+    }   
+
+    .tips {
+        color: var(--text-color);
+    }
+
+    /* Fade animation for banner images */
+    .searchlogo {
+        cursor: pointer;
+        transition: opacity 1s ease-in-out; /* Transition for fade effect */
+        opacity: 1; /* Ensures image is visible initially */
+    }
+
+/* Search Engine Switcher */
+    .engine-swticher {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        font-family: Roboto;
+        margin: 10px;
+        top: 0;
+        left: 0;
+        animation: 0.5s ease-out 0s 1 slideInFromTop;
+    }
+
+    .engine-swticher a {
+        padding: 5px;
+        font-size: 15px;
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    #primary {
+        color: var(--primary-color);
+        font-size: 20px;
+    }
+
+
+/* Mobile engine switcher */
+    .m-engine-switcher {
+        display: none; /* Initially hide the toggle container */
+        position: absolute;
+        justify-content: center;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50px;
+        z-index: 1000;
+        width: 80%;
+        padding: 0 10px;
+    }
+
+    .toggle-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        color: var(--text-color);
+        text-decoration: none;
+        border-radius: 20px;
+        border-width: 5px;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    #m-primary {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        box-shadow: 0 0 10px black;
+    }
+
+    .toggle-btn:hover {
+        background-color: var(--secondary-color);
+    }
+
+/* Notification Center */
+    .notification-zone {
+        position: fixed;
+        margin-top: 15px;
+        margin-right: 10px;
+        top: 0;
+        right: 0;
+        width: 20%; /* 1/5 of the page width */
+        font-family: Roboto, sans-serif;
+        z-index: 1000; /* Ensure it is on top of other elements */
+    }
+
+    .notification-zone .item {
+        position: relative;
+        color: var(--text-color); /* Text color */
+        padding: 10px;
+        margin-bottom: 10px; /* Space between items */
+        border: 5px solid white; /* White border */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for better visibility */
+        width: 100%; /* Full width of the container */
+        box-sizing: border-box; /* Include padding and border in the width */
+        display: block; /* Ensure items are initially visible */
+        box-shadow: 0 0 10px black;
+    }
+
+    .notification-zone .item.hidden {
+        display: none; /* Hide items with the 'hidden' class */
+    }
+
+    .notification-zone .item .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        color: var(--text-color);
+    }
+
+    #donate-button {
+        margin-top: 3px;
+    }
+
+/* Corner Box */
+    .corner-box {
+        display: flex;
+        max-width: 20%;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        font-family: Roboto;
+        margin: 10px;
+        width: fit-content;
+        position: fixed;
+    }
+
+    .corner-box a {
+        padding: 5px;
+        font-size: 16px;
+        width: 20%;
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+/* Terms of Use, Privacy Policy and GitHub Link */
+    .terms {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        font-family: Roboto;
+        margin: 10px;
+        border-style: solid;
+        border-width: 6px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .terms a {
+        padding: 5px;
+        font-size: 16px;
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+
+
+/* Search Box */
+    /* search button */
+    .gsc-search-button .gsc-search-button-v2 {
+        border-radius: 50%;
+        border-color: var(--border-color);
+        background-color: var(--border-color);
+        height: 50px;
+        width: 50px;
+        margin: auto;
+        padding:10px !important;
+        box-shadow: 0 0 10px black;
+    }
+    /* search input box, includes input field */ 
+    .gsc-input-box input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+        background-color: var(--bg-color) !important; /* inner background colour */
+        color: var(--text-color);
+        font-size: 20px;
+    }
+    /* search input box, excludes input field */ 
+    .gsc-input-box, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+        border-radius: 50px !important; /* rounded corner */
+        border-color: var(--primary-color) !important;
+        border-width: 5px !important;
+    }
+    /* searchbox outer shadow */
+    .gsc-input-box {
+        box-shadow: 0 0 10px black;
+    }
+    /* resets colour of white box behind searchbox */
+    .gsc-control-cse {
+        background-color: transparent !important;
+        border-color: var(--border-color) !important;
+    }
+    /* gets rid of 'x results in x seconds' text */
+    .gsc-result-info {
+        display: none;
+    }
+    /* gets rid of images gathered from indexed results */
+    .gsc-thumbnail {
+        display: none;
+    }
+    /* gets rid of description gathered from indexed results */
+    .gs-snippet {
+        display: none;
+    }
+    /* 'search on google for x' text remover */
+    .gcsc-more-maybe-branding-root {
+        display: none;
+    }
+    /* sort-by option remover */
+    .gsc-orderby {
+        display: none;
+    }
+    /* colours result titles white (including visited results) */
+    .gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b, a.gs-title:visited {
+        color: var(--text-color) !important;
+        font-size: 20px;
+    }
+    /* colouring of search result background and border */
+    .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
+        background-color: var(--bg-color) !important;
+        border-color: var(--primary-color) !important;
+        border: none !important;
+        padding-bottom: 5px !important;
+    }
+    /* colouring of upper border on search results */
+    .gsc-above-wrapper-area {
+        border-bottom: black !important;
+    }
+    /* Styles pagination switcher */
+    .gsc-results .gsc-cursor-box .gsc-cursor-page {
+        border-color: var(--primary-color) !important;
+        border-radius: 50% !important;
+        background-color: transparent !important;
+        color: var(--text-color) !important;
+        padding: 5px 10px !important;
+        margin: 5px;
+    }
+    /* results pagination design */
+    .gsc-cursor-page {
+        font-size: 1.5em;
+        padding: 5px 10px !important;
+    }
+    /* Styles active page pagination switcher */
+    .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+        border-color: var(--primary-color) !important;
+        color: var(--primary-color) !important;
+        border-bottom: 2px solid var(--primary-color) !important;
+        padding: 5px 10px !important;
+    }
+    .gsc-results .gsc-cursor {
+        color: var(--primary-color) !important;
+        fill: var(--primary-color) !important;
+    }
+    /* makes pagination switcher background transparent */
+    .gsc-results {
+        background-color: transparent !important;
+    }
+    /* colours search phrase clear button */
+    .gsst_a .gscb_a {
+        color: var(--primary-color) !important;
+        cursor: pointer;
+    }
+    /* styles sizing and colouring of autocomplete suggestions */
+    .gsc-completion-container {
+        color: var(--text-color) !important;
+        border-color: var(--primary-color) !important;
+        border-radius: 10px !important;
+        padding: 10px !important;
+    }
+    /* styles autocomplete suggestion when hovered */
+    .gssb_a:hover {
+        background: var(--primary-color) !important;
+        color: var(--text-color) !important;
+    }
+    /* removes border-line below filters switcher and removes border on mobile view */
+    .gsc-refinementsArea {
+        background-color: none !important;
+        border: none !important;
+        border-bottom: none !important;
+    }
+    /* styles inactive refinement tabs */
+    .gsc-tabHeader.gsc-tabhInactive, .gsc-refinementHeader.gsc-refinementhInactive {
+        color: var(--text-color) !important;
+        border-color: var(--bg-color) !important;
+        background-color: var(--bg-color) !important;
+    }
+    /* styles active refinement tabs */
+    .gsc-tabHeader.gsc-tabhActive, .gsc-refinementHeader.gsc-refinementhActive {
+        color: var(--primary-color) !important;
+        border-color: var(--primary-color) !important;
+        background-color: var(--border-color) !important;
+    }
+    /* styles tags on search results */
+    .gsc-control-cse .gsc-table-result span {
+        display: none;
+    }
+    a.gs-label {
+        float: right;
+        color: var(--text-color) !important;
+        text-decoration: none !important;
+    }
+    /* colours url on search results */
+    .gs-webResult div.gs-visibleUrl {
+        color: lightgreen !important;
+    }
+    /* removes find more on Google text in mobile view */
+    .gcsc-find-more-on-google-root {
+        display: none;
+    }
+    /* removes ads from the search results */
+    .gsc-adBlock {
+        display: none !important;
+    }
+
+/* Screen-size dependant options */
+    @media (max-width: 1000px) {
+        .maindiv {
+            margin: auto;
+            position: relative;
+            text-align: left;
+            top: 5%;
+            width: 90%;
+        }
+
+        .maindiv img {
+            max-width: 90%;
+        }
+
+        .engine-swticher {
+            display: none;
+        }
+
+        .m-engine-switcher {
+            display: flex;
+        }
+
+        .notification-zone {
+            display: none;
+        }
+
+        /* search input box, excludes input field */ 
+        .gsc-input-box, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+            border-radius: 50px !important; /* rounded corner */
+            margin-right: 5px !important;
+        }
+
+        /* Removes gradient from the refinenments area */
+        .gsc-refinementsArea {
+            background-color: var(--border-color) !important;
+        }
+        .gsc-refinementsGradient {
+            display: none !important;
+        }
+
+        .corner-box {
+            display: none;
+        }
+    }
+
+.search-note {
+    margin-top: 20px;
+    padding: 15px 16px;
+    border-radius: 15px;
+    background: #121212;
+    color: #f0f0f0;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.a_animation {
+  background-color: transparent;
+  text-decoration: none;
+  line-height: 16pt;
+  font-size: 14pt;
+  transition: 0.2s;
+  background-image: none;
+  color: white;
+}
+
+.a_animation:visited {
+  color: silver;
+}
+
+.a_animation:hover {
+  font-size: 16pt;
+  background-clip: text;
+}
+
+.a_animation{text-decoration: none}
+body.underline a{text-decoration: underline}
+
+gsc-webResult gsc-result {
+  background-color: transparent;
+  text-decoration: none;
+  line-height: 16pt;
+  font-size: 14pt;
+  transition: 0.2s;
+  background-image: none;
+  color: white;
+}
+
+gsc-webResult gsc-result:visited {
+  color: silver;
+}
+
+gsc-webResult gsc-result:hover {
+  font-size: 16pt;
+  background-clip: text;
+}
+
+gsc-webResult gsc-result{text-decoration: none}
+body.underline a{text-decoration: underline}
+
+
+
+
+.search-note2 {
+    margin-top: 20px;
+    padding: 15px 16px;
+    border-radius: 15px;
+    background: #121212;
+    color: red;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.search-note3 {
+    margin-top: 20px;
+    padding: 15px 16px;
+    border-radius: 15px;
+    background: #121212;
+    color: #f0f0f0;
+    font-size: 18px;
+    text-align: center;
+}
+
+h3 {
+    color:#ffffff
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.result-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.result-item h3 a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.result-item p {
+    color: #555;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+
+
+
+.gsc-wrapper {
+        font-family: 'Roboto';
+    src: url('fonts/IBMPlexMono-Regular.ttf') format('woff2'),
+         url('fonts/IBMPlexMono-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    border-color: var(--text-color) !important;
+  color: var(--text-color) !important;
+  border-bottom: 2px solid var(--text-color) !important;
+  padding: 5px 10px !important;
+  fill: var(--text-color) !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+}
+
+
+.gsc-refinementBlock {
+    --border-color: #FFF;
+}
+
+h2 {
+    color:#FFF
+}
+
+h5 {
+    color:#FFF
+}
+
+footer {
+    padding: 160px 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.star {
+    background-color: transparent;
+    color: #FFD700;
+}
+
+
+.a_underline {
+  background-color: transparent;
+  text-decoration: underline;
+  line-height: 16pt;
+  font-size: 14pt;
+  transition: 0.2s;
+  background-image: none;
+  color: white;
+}
+
+.a_underline:visited {
+  color: silver;
+  text-decoration: underline;
+}
+
+.a_underline:hover {
+  font-size: 16pt;
+  background-clip: text;
+  text-decoration: underline;
+}
+
+.a_underline{text-decoration: none}
+body.underline a{text-decoration: underline}
