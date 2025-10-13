@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('Game-search/css/fonts/IBMPlexMono-Regular.ttf') format('woff2'),
-         url('Game-search/css/fonts/IBMPlexMono-Regular.ttf') format('woff');
+    src: url('Games/css/fonts/IBMPlexMono-Regular.ttf') format('woff2'),
+         url('Games/css/fonts/IBMPlexMono-Regular.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
