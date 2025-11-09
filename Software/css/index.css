@@ -583,3 +583,11 @@ footer {
 
 .a_underline{text-decoration: none}
 body.underline a{text-decoration: underline}
+
+.star {
+    transition: 0.2s;
+}
+
+.star:hover {
+  font-size: 16pt;
+}
