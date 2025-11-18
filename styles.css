@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'SPG';
+    src: url(fonts/SpaceGrotesk-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'SPG-L';
+    src: url(fonts/SpaceGrotesk-Light.ttf);
+}
+
+:root{
+  --bg: black;
+  --fg: white;
+  --accent: white;
+}
+
+body {
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+h1, p, a {
+    color: var(--fg);
+    font-family: 'SPG';
+    text-decoration: none;
+}
+
+.typing {
+  display: block;
+  margin: 0 auto;  
+  text-align: center; 
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 0;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  padding-bottom: 60px;
+  animation: typing 2.2s steps(30, end) forwards;
+}
+
+.typing::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 4px;
+  color: #FFF;
+  opacity: 0;
+  animation: blink 0.9s step-end infinite;
+  animation-delay: 2.2s;
+  animation-fill-mode: both;
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 30ch; }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+  0%,100% { opacity: 1; }
+}
+
+
+a, p {
+    font-family: 'SPG-L';
+}
+
+
+h1 {
+    padding-top: 200px;
+}
+
+.search-border-wrapper {
+  display: inline-block;
+  filter: blur(10px);
+  opacity: 0;
+  animation: appear 0.8s ease-out forwards;
+  animation-delay: 1.5s;
+  padding: 25px;
+}
+
+.search-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+  width: 260px;
+  height: 250px;
+  border-radius: 15px;
+  border: 5px solid white;
+  transform: scale(1);
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: drop-shadow(0px 2px 2px rgb(74,74,74));
+  cursor: pointer;
+  will-change: transform;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.search-border:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 10px 18px rgba(74,74,74,.9));
+}
+
+.search-border img {
+  max-width: 48%;
+  height: auto;
+  display: block;
+  margin-top: 6px;
+}
+
+.search-border p {
+  margin: 0;
+}
+
+
+.search-border a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  color: inherit;
+}
+
+.card-title {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.6rem);
+  line-height: 1.05;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  text-align: center;
+}
+
+.search-border p.description {
+  font-size: 0.95rem;
+  opacity: 0.95;
+  margin-bottom: 6px;
+}
+
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(15px);
+    filter: blur(0);
+  }
+}
+
+
+body > *:not(.typing) {
+  filter: blur(10px);
+  animation: appear 0.8s ease-out forwards;
+  animation-delay: 1.5s; 
+}
+
+.mobile-break {
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  .mobile-break {
+    display: block;
+  }
+
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 20ch; }
+}
+}
+
+
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}

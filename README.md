@@ -1,57 +1,39 @@
-<p align="center">
-  <img src="https://i.ibb.co/0jrgNDpx/no-bg-image-6.png" alt="Centered Image" width="400"/>
-</p>
+
+![Logo](https://i.ibb.co/0jrgNDpx/no-bg-image-6.png)
 
 
-<h1 align="center"> Virgil Search Engine. </h1>
+# Virgil Search Engine.
 
-Virgil Is an actively maintained search platform.
-Virgil's main purpose is simple: Use Safe Sources. We only use sources listed on [FMHY](https://fmhy.net) And the list is always up to par with FMHY.
-
-<p align="center">
-  <img src="https://files.catbox.moe/pfwyaf.png" alt="Centered Image"/>
-</p>
-<h6>Image of Virgil Game Search</h6>
-
-https://github.com/user-attachments/assets/95e875c7-e074-44e4-81f8-ea51cc615019
-
-<h6>Video of Virgil Game Search</h6>
+Virgil is an actively maintained search engine for Games & Software (≧∇≦)
 
 
+## Screenshots
 
-# Features
-- Helps find Download Links For Games, Software ETC.
-- Only indexes links Tested by FMHY, a trusted, highly vetted megathread
-- Uses Google search indexing to provide results quickly
-- Minimalist UI
+![Game Search Screenshot](https://i.ibb.co/qF13KRmQ/Screenshot-2025-11-18-233704.png)
 
-## Setting-up Quick Search/Bangs On Your Browser
-1. Visit the Search Engine settings on your browser
+###### Screenshot of Virgil Game Search
+
+## Features
+
+- Helps in finding links for Games and Software
+- Only Indexes Trusted Links (Links Listed on [FMHY](https://fmhy.net))
+- Uses Google For Fast Searching
+
+
+## Quick Bangs
+Virgil Supports Quick Bangs! •ω• Heres How to set them up:
+1. Visit Search engine settings on your browser
 2. Click the '+', 'add new search engine' button (or an equivallent on your browser)
 3. Fill in the required information:
-  - Name: Anything you want, But we prefer "Virgil Game Search" for game search, and "Virgil Software Search" for software search
-  - Nickname: Anything you want, But we prefer "Virgil"
-  - URL:
-  * For Game Search: https://virgil.samidy.com/Games/?q=%s
-  * For Software Search: https://virgil.samidy.com/Software/?q=%s
-  * please note that the '%s' keyword substitute may be different across browsers, kindly follow the instructions provided on your browser to replace if needed.
-
-
-## Indexed Websites
-We mainly take from [FMHY](https://fmhy.net), So check their [Game List](https://fmhy.net/gaming) for Game Search and [Software List](https://fmhy.net/downloading#software-sites) For software Search.
-
-
+    - Name: Anything you want, But we prefer "Virgil Game Search" for game search, and "Virgil Software Search" for software search.
+    - Nickname: Nickname: Anything you want, But we prefer "Virgil Game Search" for game search, and "Virgil Software Search" for software search.
+    - URLS:
+        - For Game Search: https://virgil.samidy.com/Games/?q=%s
+        - For Software Search: https://virgil.samidy.com/Software/?q=%s
+        - please note that the '%s' keyword substitute may be different across browsers, kindly follow the instructions provided on your browser to replace if needed.
 ## Copyright/DMCA/Legal Issues
-Virgil is a scraper/aggregator for other sites.
-All data is sourced from third-party platforms.
-We don't host any files nor endorse any of these sites in any way.
-Take any legal issues up with them. ♥ 
 
+Virgil is a scraper/aggregator for other sites. All data is sourced from third-party platforms. We don't host any files nor endorse any of these sites in any way. Take any legal issues up with them. ♥
+## Support Virgil
 
-## WARNING
-Use an Adblocker Before visiting ANY Of the sites Indexed! Follow FMHY's [Beginners Guide.](https://fmhy.net/beginners-guide)
-
-#### Do note the project is still a HEAVY work in progress. the project Could get a whole rewrite soon.
-Current Version: Alpha
-
-### Happy... uh.. Pirating!
+If you like and want to support virgil, please consider ⭐'ing this project! it will really help me out and motivate me to continue working on virgil.

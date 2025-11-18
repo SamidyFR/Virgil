@@ -1,0 +1,330 @@
+@font-face {
+    font-family: 'SPG';
+    src: url(../fonts/SpaceGrotesk-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'SPG-L';
+    src: url(../fonts/SpaceGrotesk-Light.ttf);
+}
+
+
+:root {
+    --text-color: #fff;
+    --primary-color: #fff;
+}
+
+
+body {
+    background: black;
+    color: white;
+    font-family: 'SPG';
+    text-align: center;
+}
+
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.typing {
+  display: block;
+  margin: 0 auto;  
+  text-align: center; 
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 0;
+  letter-spacing: -0.01em;
+  padding-bottom: 10px;
+  animation: typing 2.2s steps(30, end) forwards;
+}
+
+.typing::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 4px;
+  color: #FFF;
+  opacity: 0;
+  animation: blink 0.9s step-end infinite;
+  animation-delay: 2.2s;
+  animation-fill-mode: both;
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 30ch; }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+  0%,100% { opacity: 1; }
+}
+
+
+.mobile-break {
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  .mobile-break {
+    display: block;
+  }
+
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 15ch; }
+}
+}
+
+
+.gsc-search-button .gsc-search-button-v2 {
+    border-radius: 25%;
+    border-color: var(--border-color);
+    background-color: var(--border-color);
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    padding:10px !important;
+    transition: 0.25s;
+}
+
+
+
+.gsc-input-box input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+    background-color: var(--bg-color) !important;
+    color: var(--result-color);
+    font-size: 20px;
+}
+
+.gsc-input-box, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+    border-radius: 15px !important;
+    border-color: var(--border-color) !important;
+    border-width: 2px !important;
+}
+
+
+.gsc-input-box {
+    box-shadow: 0 0 10px black;
+}
+
+.gsc-control-cse {
+    background-color: transparent !important;
+    max-width: 500px;
+    margin: 20px auto;
+    border-color: #000 !important;
+    background-color: #000;
+}
+
+
+
+.gsc-result-info {
+    display: none;
+}
+
+.gcsc-more-maybe-branding-root {
+    display: none;
+}
+
+.gsc-orderby {
+    display: none;
+}
+
+.gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b, a.gs-title:visited {
+    color: var(--text-color) !important;
+    font-size: 20px;
+}
+
+
+
+.gsc-webResult.gsc-result, .gsc-results {
+    background-color: var(--bg-color) !important;
+    border-color: var(--primary-color) !important;
+    border: none !important;
+    padding-bottom: 5px !important;
+}
+
+.gsc-above-wrapper-area {
+    border-bottom: black !important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+    border-color: var(--primary-color) !important;
+    border-radius: 50% !important;
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    padding: 5px 10px !important;
+    margin: 5px;
+}
+
+.gsc-cursor-page {
+    font-size: 1.5em;
+    padding: 5px 10px !important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+    padding: 5px 10px !important;
+}
+
+
+.gsc-results .gsc-cursor {
+    color: var(--primary-color) !important;
+    fill: var(--primary-color) !important;
+}
+
+.gsc-results {
+    background-color: transparent !important;
+}
+
+.gsst_a .gscb_a {
+    color: var(--primary-color) !important;
+    cursor: pointer;
+}
+
+.gsc-completion-container {
+    color: var(--text-color) !important;
+    border-color: var(--primary-color) !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+}
+
+.gssb_a:hover {
+    background: var(--primary-color) !important;
+    color: var(--text-color) !important;
+}
+
+.gsc-refinementsArea {
+    background: none !important;
+    border: none !important;
+    border-bottom: none !important;
+}
+
+
+.gsc-tabHeader.gsc-tabhInactive, .gsc-refinementHeader.gsc-refinementhInactive {
+    color: var(--text-color) !important;
+    border-color: var(--bg-color) !important;
+    background-color: var(--bg-color) !important;
+}
+
+.gsc-tabHeader.gsc-tabhActive, .gsc-refinementHeader.gsc-refinementhActive {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    background: var(--border-color) !important;
+}
+
+
+.gsc-control-cse .gsc-table-result span {
+    display: none;
+}
+
+a.gs-label {
+    float: right;
+    color: var(--text-color) !important;
+    text-decoration: none !important;
+}
+
+.gs-webResult div.gs-visibleUrl {
+    color: lightgreen !important;
+}
+
+.gcsc-find-more-on-google-root {
+    display: none;
+}
+
+.gsc-adBlock {
+  display: none !important;
+}
+
+
+.gsc-wrapper {
+    font-family: 'SPG';
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    border-color: var(--text-color) !important;
+  color: var(--text-color) !important;
+  border-bottom: 2px solid var(--text-color) !important;
+  padding: 5px 10px !important;
+  fill: var(--text-color) !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+}
+
+.gsc-webResult gsc-result {
+  background-color: transparent;
+  text-decoration: none;
+  line-height: 16pt;
+  font-size: 14pt;
+  transition: 0.2s;
+  background-image: none;
+  color: white;
+}
+
+.gsc-webResult gsc-result:visited {
+  color: silver;
+}
+
+.gsc-webResult gsc-result:hover {
+  font-size: 16pt;
+  background-clip: text;
+}
+
+.gsc-webResult gsc-result{text-decoration: none}
+body.underline a{text-decoration: underline}
+
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+  color:#FFF
+}
+
+
+
+.gsc-input {
+    font-family: 'SPG';
+}
+.gs-snippet {
+    display: none;
+}
+
+a {
+    color: white;
+    transition: 0.25s;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    font-size: 25px;
+}
+
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    margin: 10px;
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.nav a {
+    padding-right: 5px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
