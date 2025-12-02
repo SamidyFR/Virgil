@@ -211,6 +211,9 @@ body {
     display: none;
 } 
 
+.gs-image {
+    display: none;
+}
 
 .gsc-tabHeader.gsc-tabhInactive, .gsc-refinementHeader.gsc-refinementhInactive {
     color: var(--text-color) !important;
