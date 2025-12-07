@@ -7,7 +7,7 @@
 
     if (path.includes("/games/")) {
         cx = "904ead0bae8c845f0";
-        placeholder = "Search for a Game...";
+        placeholder = "Search for a game...";
         title = "Game Search";
     } else if (path.includes("/software/")) {
         cx = "c288da2c020ec4091";
