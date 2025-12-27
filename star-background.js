@@ -8,8 +8,8 @@ function resize() {
 window.addEventListener("resize", resize);
 resize();
 
-const STAR_COUNT = 250;
-const STAR_OPACITY = 1; 
+const STAR_COUNT = 200;
+const STAR_OPACITY = 0.50; 
 const stars = [];
 
 for (let i = 0; i < STAR_COUNT; i++) {

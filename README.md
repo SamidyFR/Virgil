@@ -1,6 +1,8 @@
 
 ![Logo](https://i.ibb.co/0jrgNDpx/no-bg-image-6.png)
 
+[![](https://badgers.space/github/open-issues/SamidyFR/Virgil)](https://github.com/SamidyFR/Virgil/Issues)
+
 
 # Virgil Search Engine.
 
@@ -9,7 +11,7 @@ Virgil is an actively maintained search engine for Games & Software (≧∇≦)
 
 ## Screenshots
 
-![Game Search Screenshot](https://i.ibb.co/qF13KRmQ/Screenshot-2025-11-18-233704.png)
+![Game Search Screenshot](https://i.ibb.co/C5fx95r6/Screenshot-2025-12-27-at-15-35-18-Virgil-Search-Games.png)
 
 ###### Screenshot of Virgil Game Search
 

@@ -312,7 +312,7 @@ a:visited {
     color: white;
 }
 
-a:hover {
+.anim:hover {
     font-size: 25px;
 }
 
