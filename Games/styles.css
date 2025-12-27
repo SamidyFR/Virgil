@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'SPG';
+    font-family: 'Grotesk';
     src: url(../fonts/SpaceGrotesk-Medium.ttf);
 }
 
 @font-face {
-    font-family: 'SPG-L';
+    font-family: 'Grotesk-Light';
     src: url(../fonts/SpaceGrotesk-Light.ttf);
 }
 
@@ -18,7 +18,7 @@
 body {
     background: black;
     color: white;
-    font-family: 'SPG';
+    font-family: 'Grotesk';
     text-align: center;
 }
 
@@ -252,7 +252,7 @@ a.gs-label {
 
 
 .gsc-wrapper {
-    font-family: 'SPG';
+    font-family: 'Grotesk';
 }
 
 .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
@@ -297,7 +297,7 @@ body.underline a{text-decoration: underline}
 
 
 .gsc-input {
-    font-family: 'SPG';
+    font-family: 'Grotesk';
 }
 .gs-snippet {
     display: none;
