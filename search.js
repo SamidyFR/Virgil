@@ -13,8 +13,12 @@
         cx = "c288da2c020ec4091";
         placeholder = "Search for software...";
         title = "Software Search";
+    } else if (path.includes("/mobile/")) {
+        cx = "d175f6f92fc134b38";
+        placeholder = "Search For Android Apps...";
+        title = "Mobile/APK Search";
     } else {
-        return;
+        return
     }
 
     const gcse = document.createElement("script");
@@ -36,5 +40,5 @@
 
     const interval = setInterval(() => {
         if (setSearchBox()) clearInterval(interval);
-    }, 100);
+    }, 1);
 })();
