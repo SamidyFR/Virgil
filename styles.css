@@ -1,38 +1,39 @@
 @font-face {
-    font-family: 'Grotesk';
-    src: url(fonts/SpaceGrotesk-Medium.ttf);
+  font-family: "Grotesk";
+  src: url(fonts/SpaceGrotesk-Medium.ttf);
 }
 
 @font-face {
-    font-family: 'Grotesk-Light';
-    src: url(fonts/SpaceGrotesk-Light.ttf);
+  font-family: "Grotesk-Light";
+  src: url(fonts/SpaceGrotesk-Light.ttf);
 }
 
-:root{
+:root {
   --bg: black;
   --fg: white;
   --accent: white;
 }
 
 body {
-    background-color: var(--bg);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
 }
 
-
-h1, p, a {
-    color: var(--fg);
-    font-family: 'Grotesk';
-    text-decoration: none;
+h1,
+p,
+a {
+  color: var(--fg);
+  font-family: "Grotesk";
+  text-decoration: none;
 }
 
 .typing {
   display: block;
-  margin: 0 auto;  
-  text-align: center; 
+  margin: 0 auto;
+  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   position: relative;
@@ -47,32 +48,39 @@ h1, p, a {
   content: "|";
   display: inline-block;
   margin-left: 4px;
-  color: #FFF;
+  color: #fff;
   opacity: 0;
   animation: blink 0.9s step-end infinite;
   animation-delay: 2.2s;
   animation-fill-mode: both;
 }
 
-
 @keyframes typing {
-  from { width: 0; }
-  to   { width: 30ch; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 30ch;
+  }
 }
 
 @keyframes blink {
-  50% { opacity: 0; }
-  0%,100% { opacity: 1; }
+  50% {
+    opacity: 0;
+  }
+  0%,
+  100% {
+    opacity: 1;
+  }
 }
 
-
-a, p {
-    font-family: 'Grotesk-Light';
+a,
+p {
+  font-family: "Grotesk-Light";
 }
-
 
 h1 {
-    padding-top: 200px;
+  padding-top: 200px;
 }
 
 .search-border-wrapper {
@@ -96,8 +104,10 @@ h1 {
   border-radius: 15px;
   border: 5px solid white;
   transform: scale(1);
-  transition: transform 0.4s ease, filter 0.4s ease;
-  filter: drop-shadow(0px 2px 2px rgb(74,74,74));
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+  filter: drop-shadow(0px 2px 2px rgb(74, 74, 74));
   cursor: pointer;
   will-change: transform;
   padding: 20px;
@@ -106,7 +116,7 @@ h1 {
 
 .search-border:hover {
   transform: scale(1.2);
-  filter: drop-shadow(0 10px 18px rgba(74,74,74,.9));
+  filter: drop-shadow(0 10px 18px rgba(74, 74, 74, 0.9));
 }
 
 .search-border img {
@@ -119,7 +129,6 @@ h1 {
 .search-border p {
   margin: 0;
 }
-
 
 .search-border a {
   display: flex;
@@ -146,8 +155,6 @@ h1 {
   margin-bottom: 6px;
 }
 
-
-
 @keyframes appear {
   from {
     opacity: 0;
@@ -161,11 +168,10 @@ h1 {
   }
 }
 
-
 body > *:not(.typing) {
   filter: blur(10px);
   animation: appear 0.8s ease-out forwards;
-  animation-delay: 1.5s; 
+  animation-delay: 1.5s;
 }
 
 .mobile-break {
@@ -177,18 +183,21 @@ body > *:not(.typing) {
     display: block;
   }
 
-@keyframes typing {
-  from { width: 0; }
-  to   { width: 20ch; }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 20ch;
+    }
+  }
 }
-}
-
 
 #starfield {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
