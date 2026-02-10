@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Grotesk";
-  src: url(../fonts/SpaceGrotesk-Medium.ttf);
+  src: url(fonts/SpaceGrotesk-Medium.ttf);
 }
 
 @font-face {
   font-family: "Grotesk-Light";
-  src: url(../fonts/SpaceGrotesk-Light.ttf);
+  src: url(fonts/SpaceGrotesk-Light.ttf);
 }
 
 :root {
