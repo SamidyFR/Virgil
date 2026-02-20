@@ -30,7 +30,7 @@ Virgil Supports Quick Bangs! •ω• Heres How to set them up:
    - URLS:
      - For Game Search: https://virgil.samidy.com/Games/?q=%s
      - For Software Search: https://virgil.samidy.com/Software/?q=%s
-     - For APK Search: https://virgil.samidy.com/APK/?q=%s
+     - For APK Search: https://virgil.samidy.com/Mobile/?q=%s
      - please note that the '%s' keyword substitute may be different across browsers, kindly follow the instructions provided on your browser to replace if needed.
 
 ## Copyright/DMCA/Legal Issues
