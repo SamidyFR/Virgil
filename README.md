@@ -13,7 +13,7 @@ Virgil is an actively maintained search engine for Games, Android APKs, & Softwa
 ## Features
 
 - Helps in finding links for Games, Android APKs, and Software
-- Only Indexes Trusted Links (Links Listed on [FMHY](https://fmhy.net))
+- Only Indexes Trusted Links
 - Uses Google For Fast Searching
 
 ## Quick Bangs
