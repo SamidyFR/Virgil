@@ -1,5 +1,3 @@
-![Logo](https://i.ibb.co/0jrgNDpx/no-bg-image-6.png)
-
 [![](https://badgers.space/github/open-issues/SamidyFR/Virgil)](https://github.com/SamidyFR/Virgil/Issues)
 
 # Virgil Search Engine.
