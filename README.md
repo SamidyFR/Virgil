@@ -4,12 +4,6 @@
 
 Virgil is an actively maintained search engine for Games, Android APKs, & Software (≧∇≦)
 
-## Screenshots
-
-![Game Search Screenshot](https://i.ibb.co/C5fx95r6/Screenshot-2025-12-27-at-15-35-18-Virgil-Search-Games.png)
-
-###### Screenshot of Virgil Game Search
-
 ## Features
 
 - Helps in finding links for Games, Android APKs, and Software
