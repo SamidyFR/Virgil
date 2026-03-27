@@ -18,8 +18,9 @@ body {
   background-color: var(--bg);
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   text-align: center;
+  min-height: 100vh;
 }
 
 h1,
@@ -179,17 +180,24 @@ body > *:not(.typing) {
 }
 
 @media (max-width: 600px) {
-  .mobile-break {
-    display: block;
+  body {
+    padding-bottom: 50px;
   }
 
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 20ch;
-    }
+  h1 {
+    padding-top: 100px;
+    font-size: 1.8rem;
+    white-space: normal;
+    width: auto;
+    animation: none;
+  }
+
+  .typing::after {
+    display: none;
+  }
+
+  .mobile-break {
+    display: block;
   }
 }
 
