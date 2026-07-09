@@ -3,19 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Virgil - 404!</title>
+    <title>404</title>
   </head>
   <body>
     <style>
-      @font-face {
-        font-family: "Grotesk";
-        src: url(fonts/SpaceGrotesk-Medium.ttf);
-      }
-
-      @font-face {
-        font-family: "Grotesk-Light";
-        src: url(fonts/SpaceGrotesk-Light.ttf);
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap');
 
       body {
         background-color: black;
@@ -23,7 +15,7 @@
 
       h1 {
         color: white;
-        font-family: "Grotesk";
+        font-family: "Geist Pixel";
         font-size: 500%;
         text-align: center;
         margin-top: 230px;
@@ -32,7 +24,7 @@
       p,
       a {
         color: white;
-        font-family: "Grotesk-Light";
+        font-family: "Geist Pixel";
         text-align: center;
       }
 
@@ -52,18 +44,25 @@
         transition: 0.3s;
         cursor: pointer;
       }
-
-      .button:hover {
-        font-size: larger;
-      }
     </style>
+    <script>
+      // so some BS case sensitivity dont get my ass
+      const path = window.location.pathname.toLowerCase();
+      const redirects = {
+        "/games": "/Games/",
+        "/software": "/Software/",
+        "/mobile": "/Mobile/",
+      };
+      if (redirects[path]) {
+        window.location.replace(redirects[path]);
+      }
+    </script>
     <h1>404!</h1>
-    <p>We Couldnt Find the file you were looking for ⊙﹏⊙</p>
-    <p>Maybe you went too far Searching...</p>
+    <p>We Couldnt Find the file you were looking for :(</p>
     <div style="display: flex; justify-content: center">
-      <a href="https://virgil.samidy.com">
+      <a href="index.html">
         <div class="button" style="margin: 0 auto">
-          <a href="https://virgil.samidy.com">Go Back to Home</a>
+          <a href="index.html">Go Back to Home</a>
         </div>
       </a>
     </div>

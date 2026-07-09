@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap');
+
+
+
+/* yo im lowk just inputting random values till i think it looks good enough icl */
+
+
+.gsc-control-cse {
+  background-color: transparent !important;
+  max-width: 500px;
+  margin: 20px auto;
+  border: none !important;
+}
+
+.gsc-input-box,
+.gsc-input-box-hover,
+.gsc-input-box-focus {
+  background-color: #000 !important;
+  border: 2px solid #555 !important;
+  border-radius: 0 !important;
+}
+
+.gsc-input-box input.gsc-input {
+  background-color: #000 !important;
+  color: #fff !important;
+  font-family: "Geist Pixel" !important;
+  font-size: 18px !important;
+}
+
+.gsc-search-button .gsc-search-button-v2 {
+  background-color: #fff !important;
+  border: 2px solid #fff !important;
+  border-radius: 0 !important;
+  height: 44px !important;
+  width: 44px !important;
+  padding: 6px !important;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.gsc-result-info {
+  display: none;
+}
+
+.gcsc-more-maybe-branding-root {
+  display: none;
+}
+
+.gsc-orderby {
+  display: none;
+}
+
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b,
+a.gs-title:visited {
+  color: white !important;
+  font-size: 20px;
+}
+
+.gsc-webResult.gsc-result,
+.gsc-results {
+  background-color: black !important;
+  border: none !important;
+  padding-bottom: 5px !important;
+}
+
+.gsc-above-wrapper-area {
+  border-bottom: black !important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+  border-color: grey !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  color: white !important;
+  padding: 5px 10px !important;
+  margin: 5px;
+}
+
+.gsc-cursor-page {
+  font-size: 1.5em;
+  padding: 5px 10px !important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+  border-color: grey !important;
+  color: white !important;
+  border-bottom: 2px solid grey !important;
+  padding: 5px 10px !important;
+}
+
+.gsc-results .gsc-cursor {
+  color: white !important;
+  fill: black !important;
+}
+
+.gsc-results {
+  background-color: transparent !important;
+}
+
+.gsst_a .gscb_a {
+  color: white !important;
+  cursor: pointer;
+}
+
+.gsc-completion-container {
+  color: white !important;
+  border-color: grey !important;
+  border-radius: 10px !important;
+  padding: 10px !important;
+}
+
+.gssb_a:hover {
+  background: black !important;
+  color: white !important;
+}
+
+.gsc-refinementsArea {
+  background: none !important;
+  border: none !important;
+  border-bottom: none !important;
+}
+
+.gsc-thumbnail {
+  display: none;
+}
+
+.gs-image {
+  display: none;
+}
+
+.gsc-tabHeader.gsc-tabhInactive,
+.gsc-refinementHeader.gsc-refinementhInactive {
+  color: white !important;
+  border-color: grey !important;
+  background-color: black !important;
+}
+
+.gsc-control-cse .gsc-table-result span {
+  display: none;
+}
+
+a.gs-label {
+  float: right;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.gs-webResult div.gs-visibleUrl {
+  color: lightgreen !important;
+}
+
+.gcsc-find-more-on-google-root {
+  display: none;
+}
+
+.gsc-adBlock {
+  display: none !important;
+}
+.gsc-search-button .gsc-search-button-v2:hover {
+  background-color: #000 !important;
+}
+
+.gsc-search-button .gsc-search-button-v2 svg path {
+  fill: #000 !important;
+}
+
+.gsc-search-button .gsc-search-button-v2:hover svg path {
+  fill: #fff !important;
+}
+
+.gsc-input-box-focus {
+  border-color: #fff !important;
+}
+
+.gsc-adBlock {
+  display: none !important;
+}
+
+.gsc-wrapper {
+  font-family: "Geist Pixel";
+}
+
+.gs-result .gs-title,
+.gs-result .gs-snippet {
+  font-family: "Geist Pixel" !important;
+}
+
+.gs-webResult .gs-snippet {
+  color: #aaa !important;
+}
+
+.gs-webResult .gs-title a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.gs-webResult .gs-title a:hover {
+  text-decoration: underline;
+}
+
+.gsc-result-info {
+  color: #aaa !important;
+  font-family: "Geist Pixel" !important;
+}
+
+.gsc-cursor-page {
+  color: #fff !important;
+  font-family: "Geist Pixel" !important;
+}
+
+.gsc-cursor-current-page {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+/* start */
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+  border-color: grey !important;
+  color: white !important;
+  border-bottom: 2px solid white !important;
+  padding: 5px 10px !important;
+  fill: white !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+}
+
+.gsc-webResult gsc-result {
+  background-color: transparent;
+  text-decoration: none;
+  line-height: 16pt;
+  font-size: 14pt;
+  transition: 0.2s;
+  background-image: none;
+  color: white;
+}
+
+.gsc-webResult gsc-result:visited {
+  color: silver;
+}
+
+.gsc-webResult gsc-result:hover {
+  font-size: 16pt;
+  background-clip: text;
+}
+
+.gsc-webResult gsc-result {
+  text-decoration: none;
+}
+body.underline a {
+  text-decoration: underline;
+}
+
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+  color: #fff;
+}
+
+.gsc-refinementBlock {
+    display: none !important;
+}
