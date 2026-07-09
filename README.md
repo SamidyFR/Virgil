@@ -1,8 +1,8 @@
 [![](https://badgers.space/github/open-issues/SamidyFR/Virgil)](https://github.com/SamidyFR/Virgil/Issues)
 
-# Virgil Search Engine.
+# Virgil Search Engine
 
-Virgil is an actively maintained search engine for Games, Android APKs, & Software (≧∇≦)
+mediocre search engine for not-so-legit stuff lmao
 
 ## Features
 
@@ -12,7 +12,7 @@ Virgil is an actively maintained search engine for Games, Android APKs, & Softwa
 
 ## Quick Bangs
 
-Virgil Supports Quick Bangs! •ω• Heres How to set them up:
+Virgil Supports Quick Bangs! Heres How to set them up:
 
 1. Visit Search engine settings on your browser
 2. Click the '+', 'add new search engine' button (or an equivallent on your browser)
@@ -31,4 +31,4 @@ Virgil is a scraper/aggregator for other sites. All data is sourced from third-p
 
 ## Support Virgil
 
-If you like and want to support virgil, please consider ⭐'ing this project! it will really help me out and motivate me to continue working on virgil.
+If you like and want to support virgil, please consider [Donating](https://ko-fi.com/samidyfr) or Starring the Repository on github, it helps me out a TON personally.
