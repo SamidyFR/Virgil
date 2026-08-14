@@ -38,6 +38,8 @@ a {
   border-radius: 9px;
   transition: 0.1s;
   text-decoration: none;
+  height: fit-content;
+  text-align: center;
 }
 
 a:hover {
