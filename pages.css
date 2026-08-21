@@ -38,3 +38,23 @@ nav a {
 .Index a {
     color: white;
 }
+
+.links {
+  display: flex;
+  gap: 30px;
+}
+
+.links a {
+  background-color: white;
+  color: black;
+  padding: 6px 10px;
+  border-radius: 9px;
+  transition: 0.1s;
+  text-decoration: none;
+  height: fit-content;
+  text-align: center;
+}
+
+.links a:hover {
+  transform: translateY(-2px);
+}

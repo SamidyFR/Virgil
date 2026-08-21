@@ -1,22 +1,23 @@
 (function () {
-  const path = window.location.pathname.toLowerCase();
+  const params = new URLSearchParams(window.location.search);
+  const engine = params.get("engine") || "games";
 
   let cx;
   let placeholder;
   let title;
 
-  if (path.includes("/games/")) {
+  if (engine === "games") {
     cx = "904ead0bae8c845f0";
     placeholder = "Search for a game...";
-    title = "Game Search";
-  } else if (path.includes("/software/")) {
+    title = "Virgil Game Search";
+  } else if (engine === "software") {
     cx = "c288da2c020ec4091";
     placeholder = "Search for software...";
-    title = "Software Search";
-  } else if (path.includes("/mobile/")) {
+    title = "Virgil Software Search";
+  } else if (engine === "android") {
     cx = "d175f6f92fc134b38";
-    placeholder = "Search For Android Apps...";
-    title = "Mobile/APK Search";
+    placeholder = "Search for an Android app...";
+    title = "Virgil Android Search";
   } else {
     return;
   }
