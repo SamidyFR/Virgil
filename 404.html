@@ -45,24 +45,12 @@
         cursor: pointer;
       }
     </style>
-    <script>
-      // so some BS case sensitivity dont get my ass
-      const path = window.location.pathname.toLowerCase();
-      const redirects = {
-        "/games": "/Games/",
-        "/software": "/Software/",
-        "/mobile": "/Mobile/",
-      };
-      if (redirects[path]) {
-        window.location.replace(redirects[path]);
-      }
-    </script>
     <h1>404!</h1>
     <p>We couldn't find the file you were looking for :(</p>
     <div style="display: flex; justify-content: center">
-      <a href="index.html">
+      <a href="..">
         <div class="button" style="margin: 0 auto">
-          <a href="index.html">Go Back to Home</a>
+          <a href="..">Go Back to Home</a>
         </div>
       </a>
     </div>
