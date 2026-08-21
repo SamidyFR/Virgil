@@ -18,6 +18,18 @@
     cx = "d175f6f92fc134b38";
     placeholder = "Search for an Android app...";
     title = "Virgil Android Search";
+  } else if (engine === "ios") {
+    cx = "PLACEHOLDER";
+    placeholder = "Search for an iOS/iPadOS app...";
+    title = "Virgil iOS Search";
+  } else if (engine === "ebooks") {
+    cx = "PLACEHOLDER";
+    placeholder = "Search for an eBook...";
+    title = "Virgil eBook Search";
+  } else if (engine === "audiobooks") {
+    cx = "PLACEHOLDER";
+    placeholder = "Search for an audiobook...";
+    title = "Virgil Audiobook Search";
   } else {
     return;
   }
