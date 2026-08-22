@@ -1,6 +1,5 @@
 @import url('https://api.fonts.coollabs.io/css2?family=Geist+Pixel&display=swap');
 
-
 body {
   font-family: "Geist Pixel";
   background-color: black;
@@ -14,7 +13,7 @@ body {
 }
 
 a {
-    color: white;
+  color: white;
 }
 
 .links {
@@ -34,4 +33,9 @@ a {
 
 .links a:hover {
   transform: translateY(-2px);
+}
+
+#header-404 {
+  font-size: 500%;
+  margin: 0;
 }
