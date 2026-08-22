@@ -5,26 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../pages.css" />
     <link rel="stylesheet" href="../gsc.css" />
-    <script src="../search.js"></script>
     <title>Virgil Search</title>
   </head>
 
   <body>
     <h1>Virgil Search</h1>
-    <gcse:search class="searchbox"></gcse:search>
+    <h2>Read the FAQ before continuing</h2>
     <div class="links">
-        <a href="?engine=games">Games</a>
-        <a href="?engine=software">Software</a>
-        <a href="?engine=android">Android</a>
+        <a href="?engine=games" id="games">Games</a>
+        <a href="?engine=software" id="software" class="selectedButton">Software</a>
+        <a href="?engine=android" id="android">Android</a>
         <!--
         <a href="?engine=ios">iOS</a>
         <a href="?engine=ebooks">eBooks</a>
         <a href="?engine=audiobooks">Audiobooks</a>
         -->
     </div>
-
-
-    <h3>if you like Virgil and want to support me, please consider <a style="color: gold;" href="https://ko-fi.com/samidyfr">Donating</a> Or <a style="color: gold;" href="https://github.com/SamidyFR/Virgil">⭐'ing the Repo</a>! Starring is Free :)</h3>
+    <gcse:search class="searchbox"></gcse:search>
 
     <div class="notes">
       <p>
@@ -46,7 +43,10 @@
   <nav>
     <a href="https://github.com/SamidyFR/Virgil">GitHub</a> |
     <a href="FAQ">FAQ</a> |
-    <a href="DMCA">DMCA</a> 
+    <a href="DMCA">DMCA</a> |
+    <a href="https://ko-fi.com/samidyfr" style="color: gold;">Donate</a>
    </nav>
+   
+    <script src="../search.js"></script>
   </body>
 </html>

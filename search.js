@@ -6,6 +6,10 @@
   let placeholder;
   let title;
 
+  document.getElementById(engine).style.background = "black";
+  document.getElementById(engine).style.color = "white";
+  document.getElementById(engine).style.border = "2px solid white";
+
   if (engine === "games") {
     cx = "904ead0bae8c845f0";
     placeholder = "Search for a game...";
