@@ -4,6 +4,7 @@
 body {
   font-family: "Geist Pixel";
   background-color: black;
+  color: white;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -12,30 +13,7 @@ body {
   min-height: 100dvh;
 }
 
-p {
-    color: white;
-}
-
-h1 {
-    color: white;
-}
-
-
-h3 {
-    color: white;
-}
-
-nav {
-    color: white;
-}
-
-
-nav a {
-    color: white;
-}
-
-
-.Index a {
+a {
     color: white;
 }
 
