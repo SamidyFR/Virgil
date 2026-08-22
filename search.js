@@ -8,7 +8,7 @@
 
   document.getElementById(engine).style.background = "black";
   document.getElementById(engine).style.color = "white";
-  document.getElementById(engine).style.border = "2px solid white";
+  document.getElementById(engine).style.boxShadow = "inset 0 0 0 2px white";
 
   if (engine === "games") {
     cx = "904ead0bae8c845f0";
