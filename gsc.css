@@ -1,7 +1,3 @@
-@import url('https://api.fonts.coollabs.io/css2?family=Geist+Pixel&display=swap');
-
-
-
 /* yo im lowk just inputting random values till i think it looks good enough icl */
 
 
@@ -36,9 +32,6 @@
   padding: 6px !important;
   cursor: pointer;
   transition: 0.15s;
-}
-.gsc-result-info {
-  display: none;
 }
 
 .gcsc-more-maybe-branding-root {
@@ -174,10 +167,6 @@ a.gs-label {
   border-color: #fff !important;
 }
 
-.gsc-adBlock {
-  display: none !important;
-}
-
 .gsc-wrapper {
   font-family: "Geist Pixel";
 }
@@ -226,7 +215,7 @@ a.gs-label {
   background-color: transparent !important;
 }
 
-.gsc-webResult gsc-result {
+.gsc-webResult .gsc-result {
   background-color: transparent;
   text-decoration: none;
   line-height: 16pt;
@@ -236,16 +225,16 @@ a.gs-label {
   color: white;
 }
 
-.gsc-webResult gsc-result:visited {
+.gsc-webResult .gsc-result:visited {
   color: silver;
 }
 
-.gsc-webResult gsc-result:hover {
+.gsc-webResult .gsc-result:hover {
   font-size: 16pt;
   background-clip: text;
 }
 
-.gsc-webResult gsc-result {
+.gsc-webResult .gsc-result {
   text-decoration: none;
 }
 body.underline a {
