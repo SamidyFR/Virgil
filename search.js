@@ -9,6 +9,7 @@
   document.getElementById(engine).style.background = "black";
   document.getElementById(engine).style.color = "white";
   document.getElementById(engine).style.boxShadow = "inset 0 0 0 2px white";
+  document.getElementById(engine).style.pointerEvents = "none"
 
   if (engine === "games") {
     cx = "904ead0bae8c845f0";
