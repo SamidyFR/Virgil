@@ -46,7 +46,9 @@ a {
 
 nav {
   text-align: center;
-  position: absolute;
+  background: linear-gradient(rgba(0,0,0,0), #000);
+  position: fixed;
   min-width: 100%;
-  bottom: 20px;
+  bottom: 0px;
+  padding: 20px;
 }
