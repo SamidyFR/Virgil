@@ -51,9 +51,14 @@ a.gs-title:visited {
   font-size: 20px;
 }
 
-.gsc-webResult.gsc-result,
-.gsc-results {
+.gsc-webResult.gsc-result {
   background-color: black !important;
+  border: none !important;
+  padding-bottom: 5px !important;
+}
+
+.gsc-results {
+  background-color: transparent !important;
   border: none !important;
   padding-bottom: 5px !important;
 }
@@ -74,22 +79,13 @@ a.gs-title:visited {
 .gsc-cursor-page {
   font-size: 1.5em;
   padding: 5px 10px !important;
-}
-
-.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
-  border-color: grey !important;
-  color: white !important;
-  border-bottom: 2px solid grey !important;
-  padding: 5px 10px !important;
+  color: #fff !important;
+  font-family: "Geist Pixel" !important;
 }
 
 .gsc-results .gsc-cursor {
   color: white !important;
   fill: black !important;
-}
-
-.gsc-results {
-  background-color: transparent !important;
 }
 
 .gsst_a .gscb_a {
@@ -112,7 +108,6 @@ a.gs-title:visited {
 .gsc-refinementsArea {
   background: none !important;
   border: none !important;
-  border-bottom: none !important;
 }
 
 .gsc-thumbnail {
@@ -194,11 +189,6 @@ a.gs-label {
   font-family: "Geist Pixel" !important;
 }
 
-.gsc-cursor-page {
-  color: #fff !important;
-  font-family: "Geist Pixel" !important;
-}
-
 .gsc-cursor-current-page {
   color: #000 !important;
   background-color: #fff !important;
@@ -234,9 +224,6 @@ a.gs-label {
   background-clip: text;
 }
 
-.gsc-webResult .gsc-result {
-  text-decoration: none;
-}
 body.underline a {
   text-decoration: underline;
 }
