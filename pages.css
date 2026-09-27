@@ -1,9 +1,10 @@
 @import url('https://api.fonts.coollabs.io/css2?family=Geist+Pixel&display=swap');
+@import url(/theme.css);
 
 body {
   font-family: "Geist Pixel";
-  background-color: black;
-  color: white;
+  background-color: var(--primary);
+  color: var(--secondary);
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -17,7 +18,7 @@ h1 {
 }
 
 a {
-  color: white;
+  color: inherit;
 }
 
 .links {
@@ -26,8 +27,8 @@ a {
 }
 
 .links a {
-  background-color: white;
-  color: black;
+  background-color: var(--secondary);
+  color: var(--primary);
   padding: 6px 10px;
   transition: 0.1s;
   text-decoration: none;
@@ -46,7 +47,7 @@ a {
 
 nav {
   text-align: center;
-  background: linear-gradient(rgba(0,0,0,0), #000);
+  background: linear-gradient(#0000, inherit);
   position: fixed;
   min-width: 100%;
   bottom: 0px;
