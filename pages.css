@@ -47,7 +47,7 @@ a {
 
 nav {
   text-align: center;
-  background: linear-gradient(#0000, inherit);
+  background: linear-gradient(#0000, var(--primary));
   position: fixed;
   min-width: 100%;
   bottom: 0px;
